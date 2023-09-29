@@ -1,0 +1,65 @@
+.top-div{
+  height: 5rem;
+  background-color: rgba(220, 129, 24, 0.88);
+}
+.container-fluid{
+  overflow: hidden;
+  background-color: rgba(255, 142, 62, 0.31);
+  height: 100vh;
+}
+.div-1{
+  border: 1px solid wheat;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(33, 20, 9, 0.15);
+}
+.name{
+  text-decoration: none;
+  color: #1f0101;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.message-area{
+  top: 36rem;
+  position: absolute;
+  height: 13rem;
+  background-color: rgba(255, 113, 62, 0.76);
+}
+input{
+  width: 70%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+
+}
+svg{
+  cursor: pointer;
+  height: 5rem;
+  left: 3rem;
+  position: relative;
+}
+.message-body{
+  position: relative;
+  height: 32rem;
+  overflow-y: auto;
+  background-color: white;
+}
+.chats{
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+li{
+  padding-left:1rem ;
+  list-style: none;
+  font-size: 1.5rem;
+  border: 1px solid black;
+
+
+}
+ul{
+  margin: 1rem;
+
+  max-width: 20rem;
+  padding: 0;
+}

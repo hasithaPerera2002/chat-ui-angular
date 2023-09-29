@@ -1,0 +1,48 @@
+<div class="main-div container-fluid">
+  <div class="align-content-center justify-content-center flex-wrap d-flex">
+    <div class="div-2 ">
+      <a class="fw-bold ">Chat Application</a>
+      <div class="row h-100">
+        <div class="col-md-6 ps-2 ">
+          <img src="assets/8251998_3872851.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex align-content-center justify-content-center ">
+            <div class="login-div text-center">
+              <h1 class="login-txt p-1">{{btnToggle}}</h1>
+              <div class="col-md-6 toggle-btn-div ">
+                  <button class="col-md-6 button-2" id="logInBtn" (click)="toggleValue()">Log In</button>
+                  <button class="col-md-6 button-2" id="signUpBtn" (click)="toggleValue()">Sign Up</button>
+              </div>
+              <ng-container  *ngIf="btnToggle === 'Login'; then loginTemplate else signupTemplate"></ng-container>
+              <ng-template  #loginTemplate >
+                <div class="col-md-8 input-div" [@fadeInOut]="animationState">
+                  <form  [formGroup]="loginForm" (submit)="submit()" >
+                    <div class="input-group pb-4">
+                      <input type="text" class="form-control" aria-label="User Name"
+                             formControlName="name"
+                             placeholder="User Name">
+                    </div>
+                    <div class="input-group mt-4">
+                      <input type="password" aria-label="Password" placeholder="Password" class="form-control"
+                      formControlName="password">
+                    </div>
+                    <div class="input-group d-flex flex-wrap justify-content-center pt-4 mt-4">
+                      <button class=" button-1 mt-4" type="submit" [disabled]="loginForm.invalid">Log In</button>
+                    </div>
+                  </form>
+                </div>
+              </ng-template>
+
+              <ng-template #signupTemplate>
+
+                <p>Signup Template Content Goes Here</p>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
