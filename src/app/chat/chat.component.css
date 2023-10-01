@@ -50,16 +50,31 @@ svg{
   border-bottom: 1px solid white;
 }
 li{
-  padding-left:1rem ;
   list-style: none;
   font-size: 1.5rem;
-  border: 1px solid black;
-
 
 }
 ul{
-  margin: 1rem;
-
-  max-width: 20rem;
+  margin-top:1rem;
+  position: relative;
   padding: 0;
+
+  width: 100%;
+
+}
+.sender-message-body{
+  background-color: #e06b6b;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  min-width: 5rem;
+  color: #1f0101;
+  font-size: 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+
+}
+.sender-name{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1f0101;
 }

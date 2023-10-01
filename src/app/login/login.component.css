@@ -98,7 +98,7 @@ img{
   font-weight: 400;
   font-size: 1.5rem;
   color: black;
-  font-family: Cambria;
+  font-family: Cambria, serif;
   z-index: 1;
 }
 .button-2:first-child{
