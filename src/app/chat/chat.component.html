@@ -34,8 +34,8 @@
             </li>
           </ul>
           <ul *ngIf="chatName!=='ChatRoom'">
-            <li class="d-flex flex-wrap justify-content-end" *ngFor="let chat of privateChats.get(chatName)">
-              <div class="flex-wrap sender-message-body"
+            <li class="d-flex flex-wrap " [ngClass]="chat.senderName===userName ? 'justify-content-end ': 'justify-content-start'" *ngFor="let chat of privateChats.get(chatName)">
+              <div class="flex-wrap sender-message-body p-2"
                    [ngClass]="chat.senderName===userName ? 'justify-content-end ': 'justify-content-start'">
                 <a class="sender-name text-end ">{{chat.senderName}}</a>
                 <a [ngClass]="chat.senderName===userName?'text-end':'text-start'" class="text-decoration-none text-dark">{{chat.message}}</a>
